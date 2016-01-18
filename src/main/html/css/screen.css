@@ -1275,12 +1275,15 @@
   background-color: rgba(255, 255, 255, 0.4);
 }
 .swagger-section #header #logo {
-  font-size: 1.5em;
-  font-weight: bold;
   text-decoration: none;
-  background: transparent url(../images/logo_small.png) no-repeat left center;
-  padding: 20px 0 20px 40px;
-  color: white;
+  padding: 2px 0 2px 40px;
+  color: transparent;
+  width: 75px;
+  display: inline-block;
+}
+.swagger-section #header #logo img {
+  width: 100%;
+  height: auto;
 }
 .swagger-section #content_message {
   margin: 10px 15px;
