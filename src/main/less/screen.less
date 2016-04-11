@@ -79,6 +79,7 @@
     background-color: rgb(43,43,43);
     padding: 2px 14px 14px 14px;
     height: 18px;
+    min-width: 775px;
   }
 
   #input_baseUrl { width: 400px; }
@@ -90,9 +91,8 @@
   }
 
   #api_selector .input {
-    display: block;
+    display: inline-block;
     clear: none;
-    float: left;
     margin: 0 10px 0 0;
   }
 
@@ -101,6 +101,7 @@
     padding: 3px;
     margin: 0;
   }
+
   #explore {
     display: block;
     text-decoration: none;
@@ -143,7 +144,7 @@
     text-align: center;
     padding-top: 10px;
   }
-  
+
   .swagger-collapse:before {
     content: "-";
   }
@@ -152,10 +153,8 @@
     content: "+";
   }
 
+  .error {
+    outline-color: #cc0000;
+    background-color: #f2dede;
+  }
 }
-
-
-
-
-
-
