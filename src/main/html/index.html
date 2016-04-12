@@ -33,7 +33,11 @@
   <script type="text/javascript">
     $(function () {
       var url = 'http://www.monoextranet.com/siteapi/swagger.json';
-
+      $.ajaxSetup({
+          xhrFields: {
+              withCredentials: true
+          }
+      });
       hljs.configure({
         highlightSizeThreshold: 5000
       });
@@ -63,7 +67,9 @@
         jsonEditor: false,
         defaultModelRendering: 'schema',
         showRequestHeaders: true,
-        validatorUrl: false
+        validatorUrl: false,
+        apisSorter: "alpha",
+        operationsSorter: "alpha"
       });
 
       window.swaggerUi.load();
